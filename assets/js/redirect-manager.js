@@ -1,6 +1,8 @@
-import loginRedirect from './redirect/login';
+import checkoutSsoRedirect from './redirect/checkout-sso-redirect';
+import loginRedirect from './redirect/login-redirect';
 
 const pageRedirects = {
+    cart: checkoutSsoRedirect,
     login: loginRedirect,
 };
 
